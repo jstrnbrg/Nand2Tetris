@@ -141,7 +141,7 @@ in		sel		a		b
 0		0		0		0 	//nothing to do here
 0		1		0		0	//these two lines represent an XOR gate where the output at a is equivalent to in.	
 1		0 		1		0 									
-1		1		0		1  //AND gate. Output sent to b
+1		1		0		1	//AND gate. Output sent to b
  */
 
 CHIP DMux {
@@ -239,11 +239,11 @@ What is the biggest decimal number that  can be represented with k binary digits
 
 ### Binary addition
 ```
-		  1  1  1
-	0  0  0  1  0  1  0  1
-+ 0  1  0  1  1  1  0  0
+		1 1 1
+	0 0 0 1 0 1 0 1
++	0 1 0 1 1 1 0 0
 -----------------------
-	0  1  1  1  0  0  0  1
+	0 1 1 1 0 0 0 1
 
 0 + 0 = 0
 0 + 1 = 1

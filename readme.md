@@ -5,8 +5,9 @@
 Every digital device is based on a set of chips to store and process information. All these chips are made of elementary logic gates. 
 
 ### Truth tables
-
+…..
 ### Boolean Expressions
+…..
 ### Canonical Represantation
 Starting from the truth table, we focus on all rows in which the function has a vale of 1. For each of these rows w e construct a term by and-ing together Variables (or their negation). Then we Or-together all these terms (where the function had a value of 1). That gives us a Boolean expression that is equivalent to the truth table. Then we try to shorten it. 
 —>Conclusion:  Every Boolean function, no matter how complex, can be expressed using three Boolean operators only: And, Or, and Not. 
@@ -14,9 +15,8 @@ Starting from the truth table, we focus on all rows in which the function has a 
 *The number of Boolean functions for n inputs is 2^2^n*
 
 ### Gates
-A gate is a physical device that implements a Boolean function. I
-T
-
+A gate is a physical device that implements a Boolean function. 
+…..
 
 ### NAND gate
 The NAND (not And) and the XOR (exclusive or) gate have an intersting property. Both on their own are sufficient to construct the AND, OR  and NOT Gate, by wiring  them  together in different ways. 
@@ -139,10 +139,8 @@ CHIP Mux {
 
 in		sel		a		b
 0		0		0		0 	//nothing to do here
-
-0		1		0		0	//these two lines represent an XOR 
-1     0 		1		0 	gatewhere the output at a is 									equivalent to in.
-
+0		1		0		0	//these two lines represent an XOR gate where the output at a is 
+1     0 		1		0 	equivalent to in.									
 1		1		0		1  //AND gate. Output sent to b
  */
 
@@ -244,7 +242,7 @@ What is the biggest decimal number that  can be represented with k binary digits
 		  1  1  1
 	0  0  0  1  0  1  0  1
 + 0  1  0  1  1  1  0  0
-	-----------------------
+-----------------------
 	0  1  1  1  0  0  0  1
 
 0 + 0 = 0
@@ -280,13 +278,14 @@ What is the biggest decimal number that  can be represented with k binary digits
 
 The main advantage of using twos complement over other methods (e.g. using the first bit as a sign bit) is that we can use the same circuit for addition and subtraction. See:
 ```
-	-2				14				1110
-+ -3	 		  + 13			  +	1101
-									----
-									11011 (=27, but overflow. 												Without overflow it 											is 1011 (=11)
-and 11 is -5 in twos complement!!
+	-2	-->		14	-->		1110
++ -3	-->		+13	-->	  +	1101
+-------------------------------
+							11011 
+11011 --> 27, but overflow	
+Without overflow it 	is 1011 --> 11
+And 11 is -5 in twos complement!!
 Because we throw the overflow bit away, our addition is modulo  2^n.
-	
 ```
 
 ## Week 3

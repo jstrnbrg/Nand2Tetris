@@ -139,8 +139,8 @@ CHIP Mux {
 
 in		sel		a		b
 0		0		0		0 	//nothing to do here
-0		1		0		0	//these two lines represent an XOR gate where the output at a is 
-1     0 		1		0 	equivalent to in.									
+0		1		0		0	//these two lines represent an XOR gate where the output at a is equivalent to in.	
+1     0 		1		0 									
 1		1		0		1  //AND gate. Output sent to b
  */
 

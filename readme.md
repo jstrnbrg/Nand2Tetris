@@ -278,12 +278,12 @@ What is the biggest decimal number that  can be represented with k binary digits
 
 The main advantage of using twos complement over other methods (e.g. using the first bit as a sign bit) is that we can use the same circuit for addition and subtraction. See:
 ```
-	-2	-->		14	-->		1110
-+ -3	-->		+13	-->	  +	1101
--------------------------------
-							11011 
+	-2	-->	14	-->	1110
++ 	-3	-->	+13	-->	+1101
+-----------------------------------------------
+					11011 
 11011 --> 27, but overflow	
-Without overflow it 	is 1011 --> 11
+Without overflow it is 1011 --> 11
 And 11 is -5 in twos complement!!
 Because we throw the overflow bit away, our addition is modulo  2^n.
 ```
@@ -297,8 +297,8 @@ In order to build chips that “remember” information, we must first develop s
 In most computers, the passage of time is represented by a master clock that delivers a continuous train of alternating signals. The exact hardware implementation is usually based on an oscillator that alternates continuously between two phases labeled 0-1, low-high, tick-tock, etc. The elapsed time between the beginning of a “tick” and the end of the subsequent “tock” is called cycle. Using the hardware’s circuitry, the signal is simultaneously broadcasted to every sequential chip.
 
 ###  Combinatorial Logic vs. Sequential Logic 
-Combinatorial: 	out[t] = function(in[t]) 			//output at time t only depends on input at time t
-Sequential:		out[t] = function(in[t-1]) 		//output at time t depends on the last input at time t-1.
+Combinatorial: 	out[t] = function(in[t]) 	//output at time t only depends on input at time t
+Sequential:	out[t] = function(in[t-1]) 	//output at time t depends on the last input at time t-1.
 —> based on the input in the previous time step we compute the output 
 
 
@@ -312,7 +312,7 @@ The DFF outputs the input from the previous time unit.
 
 ```
 Time 		1	2	3	4	5	6
-IN			1	0	0	1	0	0	
+IN		1	0	0	1	0	0	
 OUT		-	1	0	0	1	0
 ```
 
@@ -325,7 +325,7 @@ Else out(t) = out(t-1)				//output the old (unchanged state)
 ```
 TIME		1	2	3	4	5	6
 LOAD		1	0	0	1	1	0
-IN			1	0	0	0	1	0
+IN		1	0	0	0	1	0
 OUT		-	1	1	1	0	1
 ```
 

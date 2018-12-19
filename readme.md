@@ -239,7 +239,7 @@ What is the biggest decimal number that  can be represented with k binary digits
 
 ### Binary addition
 ```
-		1 1 1
+      1 1 1
 	0 0 0 1 0 1 0 1
 +	0 1 0 1 1 1 0 0
 -----------------------
